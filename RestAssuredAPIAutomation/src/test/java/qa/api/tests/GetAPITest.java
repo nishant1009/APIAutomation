@@ -18,7 +18,7 @@ import qa.api.client.RestClient;
 import qa.api.utilities.GetValuesFromResponseJSON;
 import qa.api.utilities.ReadPropertyFile;
 
-public class GetAPITests extends TestBase{
+public class GetAPITest extends TestBase{
 	
 	TestBase testBase;
 	String url;

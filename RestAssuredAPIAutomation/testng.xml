@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Regression" verbose="1" >
+  <test name="APIAutomation" >
+  <packages>
+           <package name="qa.api.tests"/>
+  </packages>
+    
+  </test>
+ 
+</suite>

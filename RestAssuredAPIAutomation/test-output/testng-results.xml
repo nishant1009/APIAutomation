@@ -2,80 +2,80 @@
 <testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6690" started-at="2019-10-13T12:55:37Z" finished-at="2019-10-13T12:55:44Z">
+  <suite name="Regression" duration-ms="8789" started-at="2019-10-21T14:15:23Z" finished-at="2019-10-21T14:15:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6690" started-at="2019-10-13T12:55:37Z" finished-at="2019-10-13T12:55:44Z">
-      <class name="qa.api.tests.PutAPITests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PutAPITests@51081592]" name="setUp" is-config="true" duration-ms="215" started-at="2019-10-13T18:25:37Z" finished-at="2019-10-13T18:25:38Z">
+    <test name="APIAutomation" duration-ms="8789" started-at="2019-10-21T14:15:23Z" finished-at="2019-10-21T14:15:32Z">
+      <class name="qa.api.tests.PutAPITest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PutAPITest@6cc4c815]" name="setUp" is-config="true" duration-ms="4" started-at="2019-10-21T19:45:30Z" finished-at="2019-10-21T19:45:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="putAPIStatusCheck()[pri:0, instance:qa.api.tests.PutAPITests@51081592]" name="putAPIStatusCheck" duration-ms="2627" started-at="2019-10-13T18:25:38Z" finished-at="2019-10-13T18:25:40Z">
+        <test-method status="PASS" signature="putAPIStatusCheck()[pri:0, instance:qa.api.tests.PutAPITest@6cc4c815]" name="putAPIStatusCheck" duration-ms="1870" started-at="2019-10-21T19:45:30Z" finished-at="2019-10-21T19:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putAPIStatusCheck -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PutAPITests@51081592]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-13T18:25:40Z" finished-at="2019-10-13T18:25:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="putAPIJSONResponseCheck()[pri:0, instance:qa.api.tests.PutAPITests@51081592]" name="putAPIJSONResponseCheck" duration-ms="57" started-at="2019-10-13T18:25:40Z" finished-at="2019-10-13T18:25:40Z">
+        <test-method status="PASS" signature="putAPIJSONResponseCheck()[pri:0, instance:qa.api.tests.PutAPITest@6cc4c815]" name="putAPIJSONResponseCheck" duration-ms="18" started-at="2019-10-21T19:45:32Z" finished-at="2019-10-21T19:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putAPIJSONResponseCheck -->
-      </class> <!-- qa.api.tests.PutAPITests -->
-      <class name="qa.api.tests.PostAPITests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PostAPITests@1810399e]" name="setUp" is-config="true" duration-ms="4" started-at="2019-10-13T18:25:43Z" finished-at="2019-10-13T18:25:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PutAPITest@6cc4c815]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-21T19:45:32Z" finished-at="2019-10-21T19:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="postAPITestStatusCheck()[pri:0, instance:qa.api.tests.PostAPITests@1810399e]" name="postAPITestStatusCheck" duration-ms="945" started-at="2019-10-13T18:25:43Z" finished-at="2019-10-13T18:25:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postAPITestStatusCheck -->
-        <test-method status="PASS" signature="postAPIJSONresponseCheck()[pri:0, instance:qa.api.tests.PostAPITests@1810399e]" name="postAPIJSONresponseCheck" duration-ms="8" started-at="2019-10-13T18:25:44Z" finished-at="2019-10-13T18:25:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postAPIJSONresponseCheck -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PostAPITests@1810399e]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-13T18:25:44Z" finished-at="2019-10-13T18:25:44Z">
+      </class> <!-- qa.api.tests.PutAPITest -->
+      <class name="qa.api.tests.GetAPITest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="setUp" is-config="true" duration-ms="12" started-at="2019-10-21T19:45:23Z" finished-at="2019-10-21T19:45:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-      </class> <!-- qa.api.tests.PostAPITests -->
-      <class name="qa.api.tests.GetAPITests">
-        <test-method status="PASS" signature="apiResponseStatusCheck()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="apiResponseStatusCheck" duration-ms="1417" started-at="2019-10-13T18:25:40Z" finished-at="2019-10-13T18:25:42Z">
+        <test-method status="PASS" signature="apiResponseStatusCheck()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="apiResponseStatusCheck" duration-ms="3855" started-at="2019-10-21T19:45:23Z" finished-at="2019-10-21T19:45:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiResponseStatusCheck -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-13T18:25:40Z" finished-at="2019-10-13T18:25:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-21T19:45:27Z" finished-at="2019-10-21T19:45:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="apiResponseListUsersCheck()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="apiResponseListUsersCheck" duration-ms="8" started-at="2019-10-13T18:25:42Z" finished-at="2019-10-13T18:25:42Z">
+        <test-method status="PASS" signature="apiResponseListUsersCheck()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="apiResponseListUsersCheck" duration-ms="16" started-at="2019-10-21T19:45:27Z" finished-at="2019-10-21T19:45:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiResponseListUsersCheck -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-13T18:25:42Z" finished-at="2019-10-13T18:25:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-21T19:45:27Z" finished-at="2019-10-21T19:45:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="apiResponseHeadersCheck()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="apiResponseHeadersCheck" duration-ms="4" started-at="2019-10-13T18:25:42Z" finished-at="2019-10-13T18:25:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-21T19:45:27Z" finished-at="2019-10-21T19:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="apiResponseHeadersCheck()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="apiResponseHeadersCheck" duration-ms="0" started-at="2019-10-21T19:45:27Z" finished-at="2019-10-21T19:45:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiResponseHeadersCheck -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-13T18:25:42Z" finished-at="2019-10-13T18:25:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-13T18:25:42Z" finished-at="2019-10-13T18:25:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="apiResponseCheckWithHeaders()[pri:0, instance:qa.api.tests.GetAPITests@5034c75a]" name="apiResponseCheckWithHeaders" duration-ms="1369" started-at="2019-10-13T18:25:42Z" finished-at="2019-10-13T18:25:43Z">
+        <test-method status="PASS" signature="apiResponseCheckWithHeaders()[pri:0, instance:qa.api.tests.GetAPITest@4520ebad]" name="apiResponseCheckWithHeaders" duration-ms="960" started-at="2019-10-21T19:45:27Z" finished-at="2019-10-21T19:45:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiResponseCheckWithHeaders -->
-      </class> <!-- qa.api.tests.GetAPITests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- qa.api.tests.GetAPITest -->
+      <class name="qa.api.tests.PostAPITest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PostAPITest@7dc7cbad]" name="setUp" is-config="true" duration-ms="235" started-at="2019-10-21T19:45:28Z" finished-at="2019-10-21T19:45:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postAPITestStatusCheck()[pri:0, instance:qa.api.tests.PostAPITest@7dc7cbad]" name="postAPITestStatusCheck" duration-ms="1738" started-at="2019-10-21T19:45:28Z" finished-at="2019-10-21T19:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAPITestStatusCheck -->
+        <test-method status="PASS" signature="postAPIJSONresponseCheck()[pri:0, instance:qa.api.tests.PostAPITest@7dc7cbad]" name="postAPIJSONresponseCheck" duration-ms="53" started-at="2019-10-21T19:45:30Z" finished-at="2019-10-21T19:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAPIJSONresponseCheck -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.tests.PostAPITest@7dc7cbad]" name="setUp" is-config="true" duration-ms="0" started-at="2019-10-21T19:45:30Z" finished-at="2019-10-21T19:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- qa.api.tests.PostAPITest -->
+    </test> <!-- APIAutomation -->
+  </suite> <!-- Regression -->
 </testng-results>

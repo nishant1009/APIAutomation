@@ -1,8 +1,6 @@
 package qa.api.tests;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
 
 import org.apache.http.ParseException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -12,8 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import qa.api.base.TestBase;
@@ -21,7 +18,8 @@ import qa.api.client.RestClient;
 import qa.api.data.Users;
 import qa.api.utilities.GetValuesFromResponseJSON;
 
-public class PostAPITests extends TestBase {
+public class PutAPITest extends TestBase {
+	
 	TestBase testBase;
 	String url;
 	String serviceUrl;
@@ -41,34 +39,23 @@ public class PostAPITests extends TestBase {
 		restClient= new RestClient();
 		getValuesFromResponseJSON= new GetValuesFromResponseJSON();
 		mapper=new ObjectMapper();
-		users=new Users("morpheus","leader");
+		users=new Users("morpheus","teacher");
 		
 	}
-	
 	@Test(priority=1)
-	public void postAPITestStatusCheck() throws Exception, JsonMappingException, IOException{
-		
-		//HashMap<String, String> headerMap= new HashMap<String, String>();
-		//headerMap.put("Content-Type", "application/json");
-		//Users users= new Users("morpheus","leader");
-		//object to JSON file
-		//mapper.writeValue(new File("/Users/dell/workspace/RestAssuredAPIAutomation/src/test/java/qa/api/data/users.json"), users);
-			
+	public void putAPIStatusCheck() throws Exception{
 		// Object to JSON in String
 		String userJSONString=mapper.writeValueAsString(users);
 		System.out.println(userJSONString);
-		closeableHttpResponse=restClient.post(uri, userJSONString);
-		
-		//1. Status code
-		int statusCode=closeableHttpResponse.getStatusLine().getStatusCode();
-		Assert.assertEquals(statusCode, testBase.RESPONSE_STATUS_CODE_201);
+		closeableHttpResponse=restClient.put(uri, userJSONString);
 				
-	}
-	
-	
-	@Test(priority=2)
-	public void postAPIJSONresponseCheck() throws ParseException, IOException{
+		//Status code
+		int statusCode=closeableHttpResponse.getStatusLine().getStatusCode();
+		Assert.assertEquals(statusCode, testBase.RESPONSE_STATUS_CODE_200);
 		
+	}
+	@Test(priority=2)
+	public void putAPIJSONResponseCheck() throws Exception, IOException{
 		String responseString=EntityUtils.toString(closeableHttpResponse.getEntity(),"UTF-8");
 		JSONObject responseJson=new JSONObject(responseString);
 		System.out.println("Response String is --->"+responseString);
@@ -81,9 +68,6 @@ public class PostAPITests extends TestBase {
 		Assert.assertTrue(users.getName().equals(userRespObj.getName()));
 		Assert.assertTrue(users.getJob().equals(userRespObj.getJob()));
 		
-		//String name=getValuesFromResponseJSON.getValueByJPath(responseJson, "/name");
-		//Assert.assertEquals(name, "morpheus");
-		//System.out.println("Name is--->"+name);
 		
 	}
 
